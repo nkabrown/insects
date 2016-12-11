@@ -101,7 +101,7 @@ body {
   display: block;
 }
 
-.link-card {
+.link-card a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -110,17 +110,20 @@ body {
   line-height: 50px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   font-size: 14pt;
+  transition: all 0.3s;
   color: #4456bd;
   border: 1px solid #4456bd;
   margin-top: 35px;
 }
 
-a {
+.link-card a:visited {
   color: #4456bd;
-  text-decoration: none;
 }
 
-a:visited {
-  color: #4456bd;
+.link-card a:hover {
+  transition: all 0.3s;
+  background-color: #4456bd;
+  color: #fff;
 }
